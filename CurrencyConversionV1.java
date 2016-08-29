@@ -15,7 +15,7 @@ public class CurrencyConversionV1
     {
         double startingUsDollars = 5000.00;		// local variable for US Dollars
         double pesosSpent = 7210.25;            // local variable for Mexican pesos spent
-        double pesoExchangeRage = 0.0;          // local variable for exchange rate of US Dollars to Pesos
+        double pesoExchangeRate = 0.0;          // local variable for exchange rate of US Dollars to Pesos
         double dollarsSpentInMexico = 0.0;      // local variable for dollars spent in Mexico
         double remainingUsDollars = 0.0;        // local variable for US Dollars remaining
         //remaining variables below here
@@ -31,9 +31,11 @@ public class CurrencyConversionV1
 
         // convertion for Mexican pesos
         // code goes below here
-        pesoExchangeRate = 18.196
+        pesoExchangeRate = 18.629;
+        double amountOfPesos = startingUsDollars * pesoExchangeRate;
+        amountOfPesos -= pesosSpent;
+        dollarsSpentInMexico = amountOfPesos/pesoExchangeRate;
         
-
         // convertion for Japanese yen
         // code goes below here
 
