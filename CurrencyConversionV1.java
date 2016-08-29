@@ -13,11 +13,11 @@ public class CurrencyConversionV1
 {
     public static void main(String [ ] args)
     {
-        double startingUsDollars = 5000.00;		// local variable for US Dollars
-        double pesosSpent = 7210.25;            // local variable for Mexican pesos spent
-        double pesoExchangeRate = 0.0;          // local variable for exchange rate of US Dollars to Pesos
-        double dollarsSpentInMexico = 0.0;      // local variable for dollars spent in Mexico
-        double remainingUsDollars = 0.0;        // local variable for US Dollars remaining
+        double Starting_US_Dollars = 5000.00;		// local variable for US Dollars
+        double Pesos_Spent = 7210.25;            // local variable for Mexican pesos spent
+        double Peso_Exchange_Rate = 0.0;          // local variable for exchange rate of US Dollars to Pesos
+        double Dollars_Spent_In_Mexico = 0.0;      // local variable for dollars spent in Mexico
+        double Remaining_US_Dollars = 0.0;        // local variable for US Dollars remaining
         //remaining variables below here
 
         // purpose of program
@@ -31,24 +31,26 @@ public class CurrencyConversionV1
 
         // convertion for Mexican pesos
         // code goes below here
-        pesoExchangeRate = 18.629;
-        dollarsSpentInMexico = pesosSpent/pesoExchangeRate;
-        remainingUsDollars = startingUsDollars - dollarsSpentInMexico;
+        Peso_Exchange_Rate = 18.629;
+        Dollars_Spent_In_Mexico = Pesos_Spent/Peso_Exchange_Rate;
+        Remaining_US_Dollars = Starting_US_Dollars - Dollars_Spent_In_Mexico;
         
         // convertion for Japanese yen
         // code goes below here
-        double yenExchangeRate = 102.254;
-        double yenSpent = 99939.75;
-        double dollarsSpentInJapan = yenSpent/yenExchangeRate;
-        remainingUsDollars -= dollarsSpentInJapan;
+        double Yen_Exchange_Rate = 102.254;
+        double Yen_Spent = 99939.75;
+        double Dollars_Spent_In_Japan = Yen_Spent/Yen_Exchange_Rate;
+        Remaining_US_Dollars -= Dollars_Spent_In_Japan;
 
         // convertion for Euros
         // code goes below here
-
-
+	double Euro_Exchange_Rate = 0.895;
+	double Euros_Spent = 624.95;
+	double Dollars_Spent_In_France = Euros_Spent/Euro_Exchange_Rate;
+	Remaining_US_Dollars -= Dollars_Spent_In_France;
         //print output to the screen
         // code goes below here
-
+	System.out.println("Remaining US Dollars:" + Remaining_US_Dollars);
 
         // Complete the code below. Replace th 0's for totalItem and fundsRemaining
         // with the proper calculations. Casting, integer division and the modulus
