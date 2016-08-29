@@ -32,12 +32,15 @@ public class CurrencyConversionV1
         // convertion for Mexican pesos
         // code goes below here
         pesoExchangeRate = 18.629;
-        double amountOfPesos = startingUsDollars * pesoExchangeRate;
-        amountOfPesos -= pesosSpent;
-        dollarsSpentInMexico = amountOfPesos/pesoExchangeRate;
+        dollarsSpentInMexico = pesosSpent/pesoExchangeRate;
+        remainingUsDollars = startingUsDollars - dollarsSpentInMexico;
         
         // convertion for Japanese yen
         // code goes below here
+        double yenExchangeRate = 102.254;
+        double yenSpent = 99939.75;
+        double dollarsSpentInJapan = yenSpent/yenExchangeRate;
+        remainingUsDollars -= dollarsSpentInJapan;
 
         // convertion for Euros
         // code goes below here
