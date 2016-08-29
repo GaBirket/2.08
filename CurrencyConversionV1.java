@@ -1,4 +1,3 @@
-
 /**
  * The CurrencyConversion class converts an amount of money from a specific
  * country into the equivalent currency of another country given the current
@@ -44,13 +43,22 @@ public class CurrencyConversionV1
 
         // convertion for Euros
         // code goes below here
-	double Euro_Exchange_Rate = 0.895;
-	double Euros_Spent = 624.95;
-	double Dollars_Spent_In_France = Euros_Spent/Euro_Exchange_Rate;
-	Remaining_US_Dollars -= Dollars_Spent_In_France;
+        double Euro_Exchange_Rate = 0.895;
+        double Euros_Spent = 624.95;
+        double Dollars_Spent_In_France = Euros_Spent/Euro_Exchange_Rate;
+        Remaining_US_Dollars -= Dollars_Spent_In_France;
         //print output to the screen
         // code goes below here
-	System.out.println("Remaining US Dollars:" + Remaining_US_Dollars);
+        System.out.print("Starting US Dollars: ");
+        System.out.println(Starting_US_Dollars);
+        System.out.print("US Dollars Spent In Mexico: ");
+        System.out.println(Dollars_Spent_In_Mexico);
+        System.out.print("US Dollars Spent In Japan: ");
+        System.out.println(Dollars_Spent_In_Japan);
+        System.out.print("US Dollars Spent in France: ");
+        System.out.println(Dollars_Spent_In_France);
+        System.out.print("Remaining US Dollars: ");
+        System.out.println(Remaining_US_Dollars);
 
         // Complete the code below. Replace th 0's for totalItem and fundsRemaining
         // with the proper calculations. Casting, integer division and the modulus
