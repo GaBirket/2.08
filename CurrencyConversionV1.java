@@ -73,7 +73,7 @@ public class CurrencyConversionV1
 		int costItem1 = 4;  						//cost per item of first souvenir
 		int budget1 = 50;   						//budget for first item
 		int totalItem1 = budget1/costItem1; 		//how many items can be purchased
-		double fundsRemaining1 = 0.0;  //how much of the budget is left
+		double fundsRemaining1 = budget1 % costItem1;  //how much of the budget is left
 
 		System.out.println("Item 1");
 		System.out.println("   Cost per item: $" + costItem1 );
@@ -84,8 +84,8 @@ public class CurrencyConversionV1
 		//Calculations for Souvenir #2
 		double costItem2 = 32.55;  						//cost per item of second souvenir
 		int budget2 = 713;   							//budget for second item
-		int totalItem2 = 0; 	//how many items can be purchased
-		double fundsRemaining2 = 0.0;  	//how much of the budget is left
+		int totalItem2 = (int)(budget2/costItem2); 	//how many items can be purchased
+		double fundsRemaining2 = budget2 % costItem2;  	//how much of the budget is left
 
 		System.out.println("Item 2");
 		System.out.println("   Cost per item: $" + costItem2 );
